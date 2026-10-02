@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação para permitir acentos e caracteres especiais. -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar à largura de celulares e tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador. -->
+    <title>SynapseQ | Computação Quântica</title>
+
+    <!--
+        O CSS foi colocado em um arquivo externo, conforme solicitado na atividade.
+        A tag link conecta o HTML ao arquivo style.css.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="inicio">
+
+    <!-- ========================= CABEÇALHO ========================= -->
+    <header class="cabecalho-principal">
+
+        <!-- Área de identificação do projeto. -->
+        <div class="marca">
+            <span class="simbolo-marca">Q</span>
+
+            <div>
+                <p class="nome-marca">SynapseQ</p>
+                <p class="subtitulo-marca">Web Design • Computação Quântica</p>
+            </div>
+        </div>
+
+        <!-- Botão usado em telas pequenas para abrir o menu. -->
+        <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <!-- Menu principal com links internos. -->
+        <nav class="menu-principal" id="menuPrincipal">
+            <a href="#inicio">Início</a>
+            <a href="#conceitos">Conceitos</a>
+            <a href="#comparacao">Comparação</a>
+            <a href="#modelos">Modelos</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+    <!-- ========================= HERO ========================= -->
+    <main>
+
+        <section class="hero" id="hero">
+
+            <!-- Conteúdo textual principal da apresentação. -->
+            <div class="hero-conteudo">
+
+                <p class="etiqueta">EXPLORANDO O FUTURO</p>
+
+                <h1>
+                    Computação
+                    <span>Quântica</span>
+                    de forma simples.
+                </h1>
+
+                <p class="texto-hero">
+                    Entenda como computadores quânticos funcionam,
+                    conheça seus conceitos fundamentais e compare
+                    suas características com computadores clássicos.
+                </p>
+
+                <div class="grupo-botoes">
+                    <a class="botao botao-principal" href="#conceitos">
+                        Explorar conceitos
+                    </a>
+
+                    <a class="botao botao-secundario" href="#comparacao">
+                        Ver comparação
+                    </a>
+                </div>
+
+                <!-- Pequenas informações de destaque. -->
+                <div class="estatisticas">
+                    <div class="estatistica">
+                        <strong>01</strong>
+                        <span>Qubit</span>
+                    </div>
+
+                    <div class="estatistica">
+                        <strong>02</strong>
+                        <span>Superposição</span>
+                    </div>
+
+                    <div class="estatistica">
+                        <strong>03</strong>
+                        <span>Emaranhamento</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elemento visual construído apenas com HTML e CSS. -->
+            <div class="orbita-area" aria-label="Ilustração de um qubit">
+
+                <div class="orbita orbita-externa"></div>
+                <div class="orbita orbita-media"></div>
+                <div class="orbita orbita-interna"></div>
+
+                <div class="nucleo-qubit">
+                    <span>|ψ⟩</span>
+                    <small>QUBIT</small>
+                </div>
+
+                <span class="particula particula-um"></span>
+                <span class="particula particula-dois"></span>
+                <span class="particula particula-tres"></span>
+            </div>
+
+        </section>
+
+        <!-- ========================= CONCEITOS ========================= -->
+        <section class="secao" id="conceitos">
+
+            <div class="cabecalho-secao">
+                <p class="etiqueta">FUNDAMENTOS</p>
+
+                <h2>
+                    Os conceitos por trás
+                    <span>do quântico.</span>
+                </h2>
+
+                <p>
+                    A computação quântica utiliza princípios da física quântica
+                    para representar e processar informações.
+                </p>
+            </div>
+
+            <div class="grade-conceitos">
+
+                <!-- Card 1 -->
+                <article class="card conceito-card">
+                    <span class="numero-card">01</span>
+
+                    <div class="icone-card">Q</div>
+
+                    <h3>Qubit</h3>
+
+                    <p>
+                        Unidade básica de informação quântica. Diferente
+                        do bit clássico, pode representar uma combinação
+                        de estados quânticos.
+                    </p>
+
+                    <a href="#simulador" class="link-card">
+                        Ver exemplo →
+                    </a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card conceito-card destaque">
+                    <span class="numero-card">02</span>
+
+                    <div class="icone-card">Ψ</div>
+
+                    <h3>Superposição</h3>
+
+                    <p>
+                        Permite que um sistema quântico seja descrito como
+                        uma combinação de estados antes da medição.
+                    </p>
+
+                    <a href="#simulador" class="link-card">
+                        Ver exemplo →
+                    </a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card conceito-card">
+                    <span class="numero-card">03</span>
+
+                    <div class="icone-card">∞</div>
+
+                    <h3>Emaranhamento</h3>
+
+                    <p>
+                        Relação entre estados quânticos que pode gerar
+                        correlações que não possuem equivalente clássico simples.
+                    </p>
+
+                    <a href="#recursos" class="link-card">
+                        Saiba mais →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ========================= COMPARAÇÃO ========================= -->
+        <section class="secao secao-escura" id="comparacao">
+
+            <div class="cabecalho-secao centralizado">
+                <p class="etiqueta">COMPARAÇÃO</p>
+
+                <h2>
+                    Clássico
+                    <span>vs. Quântico</span>
+                </h2>
+
+                <p>
+                    A comparação abaixo organiza algumas diferenças conceituais
+                    entre os dois modelos de computação.
+                </p>
+            </div>
+
+            <div class="tabela-comparacao">
+
+                <div class="linha-tabela cabecalho-tabela">
+                    <div>Característica</div>
+                    <div>Computador clássico</div>
+                    <div>Computador quântico</div>
+                </div>
+
+                <div class="linha-tabela">
+                    <div>Unidade de informação</div>
+                    <div>Bit</div>
+                    <div>Qubit</div>
+                </div>
+
+                <div class="linha-tabela">
+                    <div>Estado</div>
+                    <div>0 ou 1</div>
+                    <div>Estado quântico</div>
+                </div>
+
+                <div class="linha-tabela">
+                    <div>Processamento</div>
+                    <div>Portas lógicas clássicas</div>
+                    <div>Portas quânticas</div>
+                </div>
+
+                <div class="linha-tabela">
+                    <div>Aplicações</div>
+                    <div>Uso geral</div>
+                    <div>Problemas específicos</div>
+                </div>
+
+            </div>
+
+            <div class="aviso-comparacao">
+                <strong>Importante:</strong>
+                computadores quânticos não substituem automaticamente
+                computadores clássicos. Eles são pesquisados para problemas
+                em que métodos quânticos podem ser úteis.
+            </div>
+
+        </section>
+
+        <!-- ========================= SIMULADOR ========================= -->
+        <section class="secao" id="simulador">
+
+            <div class="cabecalho-secao">
+                <p class="etiqueta">INTERAÇÃO</p>
+
+                <h2>
+                    Simule um
+                    <span>estado do qubit.</span>
+                </h2>
+
+                <p>
+                    Clique nos botões para alterar a representação visual
+                    do estado apresentado abaixo.
+                </p>
+            </div>
+
+            <div class="simulador">
+
+                <div class="painel-controles">
+
+                    <h3>Escolha um estado</h3>
+
+                    <p>
+                        A demonstração é visual e educativa.
+                        Ela não executa um circuito quântico real.
+                    </p>
+
+                    <div class="botoes-estado">
+                        <button class="botao-estado ativo" data-estado="0">
+                            Estado |0⟩
+                        </button>
+
+                        <button class="botao-estado" data-estado="1">
+                            Estado |1⟩
+                        </button>
+
+                        <button class="botao-estado" data-estado="superposicao">
+                            Superposição
+                        </button>
+                    </div>
+                </div>
+
+                <div class="painel-visual" id="painelVisual">
+
+                    <div class="onda"></div>
+
+                    <div class="qubit-grande" id="qubitGrande">
+                        <span id="simboloQubit">|0⟩</span>
+                    </div>
+
+                    <p id="descricaoEstado">
+                        O qubit está representado no estado |0⟩.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= MODELOS ========================= -->
+        <section class="secao secao-gradiente" id="modelos">
+
+            <div class="cabecalho-secao centralizado">
+                <p class="etiqueta">TECNOLOGIA</p>
+
+                <h2>
+                    Onde a computação
+                    <span>quântica aparece?</span>
+                </h2>
+
+                <p>
+                    Existem diferentes abordagens e áreas de pesquisa
+                    relacionadas aos computadores quânticos.
+                </p>
+            </div>
+
+            <div class="grade-modelos">
+
+                <article class="modelo">
+                    <div class="numero-modelo">01</div>
+
+                    <h3>Pesquisa</h3>
+
+                    <p>
+                        Estudo de algoritmos, circuitos, qubits e técnicas
+                        para tornar sistemas quânticos mais úteis.
+                    </p>
+
+                    <ul>
+                        <li>Algoritmos</li>
+                        <li>Circuitos</li>
+                        <li>Correção de erros</li>
+                    </ul>
+                </article>
+
+                <article class="modelo">
+                    <div class="numero-modelo">02</div>
+
+                    <h3>Simulação</h3>
+
+                    <p>
+                        Ferramentas de software podem representar circuitos
+                        quânticos sem depender de um computador quântico físico.
+                    </p>
+
+                    <ul>
+                        <li>Ambientes educacionais</li>
+                        <li>Testes</li>
+                        <li>Experimentos</li>
+                    </ul>
+                </article>
+
+                <article class="modelo">
+                    <div class="numero-modelo">03</div>
+
+                    <h3>Aplicações</h3>
+
+                    <p>
+                        Pesquisas estudam possíveis aplicações em otimização,
+                        química, materiais e outros problemas específicos.
+                    </p>
+
+                    <ul>
+                        <li>Otimização</li>
+                        <li>Química</li>
+                        <li>Materiais</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ========================= RECURSOS ========================= -->
+        <section class="secao" id="recursos">
+
+            <div class="cabecalho-secao">
+                <p class="etiqueta">GUIA RÁPIDO</p>
+
+                <h2>
+                    Continue sua
+                    <span>exploração.</span>
+                </h2>
+
+                <p>
+                    Esta área reúne conceitos e termos para revisar
+                    o conteúdo apresentado.
+                </p>
+            </div>
+
+            <div class="lista-recursos">
+
+                <details class="recurso">
+                    <summary>O que é um bit?</summary>
+                    <p>
+                        Em computação clássica, o bit é uma unidade de informação
+                        que pode assumir valores como 0 ou 1.
+                    </p>
+                </details>
+
+                <details class="recurso">
+                    <summary>O que é um qubit?</summary>
+                    <p>
+                        É a unidade básica de informação usada na computação
+                        quântica. Seu estado é descrito por princípios da
+                        mecânica quântica.
+                    </p>
+                </details>
+
+                <details class="recurso">
+                    <summary>O que significa medir um qubit?</summary>
+                    <p>
+                        A medição associa o estado quântico observado a um
+                        resultado clássico, conforme o processo de medição.
+                    </p>
+                </details>
+
+                <details class="recurso">
+                    <summary>Computador quântico é mais rápido em tudo?</summary>
+                    <p>
+                        Não. O objetivo da computação quântica é explorar
+                        vantagens em determinados problemas e algoritmos.
+                    </p>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- ========================= NEWSLETTER ========================= -->
+        <section class="secao contato-secao" id="contato">
+
+            <div class="contato-caixa">
+
+                <div>
+                    <p class="etiqueta">PROJETO ACADÊMICO</p>
+
+                    <h2>
+                        Gostou da
+                        <span>exploração?</span>
+                    </h2>
+
+                    <p>
+                        Insira seu nome para participar da demonstração
+                        interativa desta página.
+                    </p>
+                </div>
+
+                <form id="formulario">
+
+                    <label for="nome">Seu nome</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                    <button class="botao botao-principal" type="submit">
+                        Participar
+                    </button>
+
+                    <p class="mensagem-formulario" id="mensagemFormulario"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================= RODAPÉ ========================= -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div>
+                <p class="nome-marca">SynapseQ</p>
+
+                <p>
+                    Projeto acadêmico desenvolvido para a disciplina
+                    de Web Design.
+                </p>
+            </div>
+
+            <div class="links-rodape">
+                <a href="#inicio">Início</a>
+                <a href="#conceitos">Conceitos</a>
+                <a href="#comparacao">Comparação</a>
+                <a href="#modelos">Modelos</a>
+            </div>
+
+            <div>
+                <p class="credito">HTML + CSS + JavaScript</p>
+                <p class="credito">CSS externo</p>
+            </div>
+
+        </div>
+
+        <div class="rodape-final">
+            <p>
+                © 2026 SynapseQ — Projeto acadêmico.
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript externo usado apenas para as interações da página. -->
+    <script src="script.js"></script>
+</body>
+</html>
