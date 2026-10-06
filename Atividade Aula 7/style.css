@@ -245,6 +245,64 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .lg-border  { border-left-color: #f3dd8a; }
 .lg-margin  { border-left-color: #f4c38b; }
 
+/* ===== Formulário de contato ===== */
+.form {
+  display: flex;
+  flex-direction: column;   /* campos empilhados */
+  gap: 14px;
+  max-width: 640px;
+  padding: 20px;
+  background: var(--papel);
+  border: 2px solid var(--borda);
+}
+
+/* Linha com dois campos lado a lado */
+.form-linha { display: flex; flex-wrap: wrap; gap: 14px; }
+
+/* Cada campo: rótulo em cima, entrada embaixo */
+.campo { display: flex; flex-direction: column; gap: 4px; flex: 1 1 220px; }
+.campo label { font-weight: bold; font-size: 0.9rem; }
+
+.campo input,
+.campo textarea {
+  padding: 10px;
+  border: 2px solid var(--borda);
+  border-radius: 4px;
+  background: var(--fundo);
+  color: var(--texto);
+  font: inherit;
+  transition: border-color 0.2s;   /* a cor da borda muda suavemente */
+}
+.campo textarea { min-height: 120px; resize: vertical; }
+
+/* Texto de exemplo dentro do campo vazio */
+.campo ::placeholder { color: #7b8794; opacity: 1; }
+
+/* Estados de interação */
+.campo input:hover,
+.campo textarea:hover { border-color: var(--ciano); }
+.campo input:focus-visible,
+.campo textarea:focus-visible {
+  outline: 3px solid var(--ciano);   /* contorno visível ao navegar pelo teclado */
+  outline-offset: 2px;
+}
+
+/* Botão */
+.botao {
+  align-self: flex-start;            /* não estica na largura toda */
+  padding: 10px 24px;
+  background: var(--azul);
+  color: #fff;
+  border: none;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.botao:hover { background: var(--ciano); }
+.botao:active { transform: translateY(1px); }
+.botao:focus-visible { outline: 3px solid var(--ciano); outline-offset: 3px; }
+
 /* ===== Rodapé ===== */
 .rodape {
   background: var(--azul);

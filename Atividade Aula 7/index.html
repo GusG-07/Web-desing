@@ -20,6 +20,7 @@
         <li><a href="#laboratorio">Laboratório</a></li>
         <li><a href="#rodape">Rodapé</a></li>
         <li><a href="#boxmodel">Box Model</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -443,10 +444,36 @@
       </div>
     </section>
 
+        <!-- ===== Formulário de contato: container flex em coluna ===== -->
+    <section class="contato" id="contato">
+      <h2 class="titulo-secao">Contato</h2>
+      <form class="form" action="#" method="post">
+
+        <!-- Nome e e-mail lado a lado; em telas estreitas ficam um embaixo do outro -->
+        <div class="form-linha">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+        </div>
+
+        <button type="submit" class="botao">Enviar mensagem</button>
+      </form>
+    </section>
+
   </main>
 
   <footer class="rodape" id="rodape">
-    <p>Atividade 02 · CSS: Box Model e Flexbox</p>
+    <p>Atividade Aula 7 - 02 · CSS: Box Model e Flexbox</p>
   </footer>
 
 </body>
