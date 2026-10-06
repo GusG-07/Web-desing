@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Necessário para o layout responsivo funcionar em celulares -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model e Flexbox - Atividade 02</title>
+  <!-- CSS externo: o estilo fica em style.css e é ligado ao HTML pela tag link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho: container flex com logo à esquerda e menu à direita -->
+  <header class="cabecalho">
+    <h1 class="logo">Box Model &amp; Flexbox</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#intro">Introdução</a></li>
+        <li><a href="#galeria">20 elementos</a></li>
+        <li><a href="#rodape">Rodapé</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introdução: texto + selos lado a lado (vira coluna no celular) -->
+    <section class="intro" id="intro">
+      <article class="intro-texto">
+        <h2>Cada elemento é uma caixa</h2>
+        <p>Todo elemento HTML gera uma caixa formada por quatro camadas, de dentro para fora: <b>content</b>, <b>padding</b>, <b>border</b> e <b>margin</b>.</p>
+        <p>Abaixo, 20 caixas com valores diferentes em cada camada, organizadas com Flexbox.</p>
+      </article>
+      <aside class="selos">
+        <span class="selo">Atividade 02</span>
+        <span class="selo">Web Design</span>
+        <span class="selo">Facens</span>
+      </aside>
+    </section>
+
+    <!-- Galeria: container flex que organiza as 20 caixas e quebra linha conforme a tela -->
+    <section id="galeria">
+      <h2 class="titulo-secao">20 elementos com content, padding, border e margin</h2>
+      <div class="galeria">
+      <!-- Elemento 01: content 150x110px, padding 10px, border 3px solid, margin 8px -->
+      <div class="caixa e01">
+        <strong>Caixa 01</strong>
+        <span>content 150×110px</span>
+        <span>padding 10px</span>
+        <span>border 3px solid</span>
+        <span>margin 8px</span>
+      </div>
+      <!-- Elemento 02: content 160x110px, padding 12px, border 4px dashed, margin 6px -->
+      <div class="caixa e02">
+        <strong>Caixa 02</strong>
+        <span>content 160×110px</span>
+        <span>padding 12px</span>
+        <span>border 4px dashed</span>
+        <span>margin 6px</span>
+      </div>
+      <!-- Elemento 03: content 170x112px, padding 14px, border 3px dotted, margin 10px -->
+      <div class="caixa e03">
+        <strong>Caixa 03</strong>
+        <span>content 170×112px</span>
+        <span>padding 14px</span>
+        <span>border 3px dotted</span>
+        <span>margin 10px</span>
+      </div>
+      <!-- Elemento 04: content 180x112px, padding 16px, border 6px double, margin 8px -->
+      <div class="caixa e04">
+        <strong>Caixa 04</strong>
+        <span>content 180×112px</span>
+        <span>padding 16px</span>
+        <span>border 6px double</span>
+        <span>margin 8px</span>
+      </div>
+      <!-- Elemento 05: content 190x116px, padding 18px, border 4px groove, margin 12px -->
+      <div class="caixa e05">
+        <strong>Caixa 05</strong>
+        <span>content 190×116px</span>
+        <span>padding 18px</span>
+        <span>border 4px groove</span>
+        <span>margin 12px</span>
+      </div>
+      <!-- Elemento 06: content 140x110px, padding 8px, border 2px solid, margin 4px -->
+      <div class="caixa e06">
+        <strong>Caixa 06</strong>
+        <span>content 140×110px</span>
+        <span>padding 8px</span>
+        <span>border 2px solid</span>
+        <span>margin 4px</span>
+      </div>
+      <!-- Elemento 07: content 200x116px, padding 20px, border 5px ridge, margin 10px -->
+      <div class="caixa e07">
+        <strong>Caixa 07</strong>
+        <span>content 200×116px</span>
+        <span>padding 20px</span>
+        <span>border 5px ridge</span>
+        <span>margin 10px</span>
+      </div>
+      <!-- Elemento 08: content 150x110px, padding 12px, border 3px inset, margin 6px -->
+      <div class="caixa e08">
+        <strong>Caixa 08</strong>
+        <span>content 150×110px</span>
+        <span>padding 12px</span>
+        <span>border 3px inset</span>
+        <span>margin 6px</span>
+      </div>
+      <!-- Elemento 09: content 160x110px, padding 12px, border 3px outset, margin 8px -->
+      <div class="caixa e09">
+        <strong>Caixa 09</strong>
+        <span>content 160×110px</span>
+        <span>padding 12px</span>
+        <span>border 3px outset</span>
+        <span>margin 8px</span>
+      </div>
+      <!-- Elemento 10: content 210x116px, padding 14px, border 4px solid, margin 12px -->
+      <div class="caixa e10">
+        <strong>Caixa 10</strong>
+        <span>content 210×116px</span>
+        <span>padding 14px</span>
+        <span>border 4px solid</span>
+        <span>margin 12px</span>
+      </div>
+      <!-- Elemento 11: content 150x110px, padding 6px, border 2px dashed, margin 14px -->
+      <div class="caixa e11">
+        <strong>Caixa 11</strong>
+        <span>content 150×110px</span>
+        <span>padding 6px</span>
+        <span>border 2px dashed</span>
+        <span>margin 14px</span>
+      </div>
+      <!-- Elemento 12: content 170x112px, padding 22px, border 3px solid, margin 5px -->
+      <div class="caixa e12">
+        <strong>Caixa 12</strong>
+        <span>content 170×112px</span>
+        <span>padding 22px</span>
+        <span>border 3px solid</span>
+        <span>margin 5px</span>
+      </div>
+      <!-- Elemento 13: content 180x112px, padding 10px, border 5px dotted, margin 9px -->
+      <div class="caixa e13">
+        <strong>Caixa 13</strong>
+        <span>content 180×112px</span>
+        <span>padding 10px</span>
+        <span>border 5px dotted</span>
+        <span>margin 9px</span>
+      </div>
+      <!-- Elemento 14: content 140x110px, padding 15px, border 4px double, margin 7px -->
+      <div class="caixa e14">
+        <strong>Caixa 14</strong>
+        <span>content 140×110px</span>
+        <span>padding 15px</span>
+        <span>border 4px double</span>
+        <span>margin 7px</span>
+      </div>
+      <!-- Elemento 15: content 190x116px, padding 9px, border 3px dashed, margin 11px -->
+      <div class="caixa e15">
+        <strong>Caixa 15</strong>
+        <span>content 190×116px</span>
+        <span>padding 9px</span>
+        <span>border 3px dashed</span>
+        <span>margin 11px</span>
+      </div>
+      <!-- Elemento 16: content 160x110px, padding 13px, border 2px solid, margin 10px -->
+      <div class="caixa e16">
+        <strong>Caixa 16</strong>
+        <span>content 160×110px</span>
+        <span>padding 13px</span>
+        <span>border 2px solid</span>
+        <span>margin 10px</span>
+      </div>
+      <!-- Elemento 17: content 175x112px, padding 11px, border 6px groove, margin 6px -->
+      <div class="caixa e17">
+        <strong>Caixa 17</strong>
+        <span>content 175×112px</span>
+        <span>padding 11px</span>
+        <span>border 6px groove</span>
+        <span>margin 6px</span>
+      </div>
+      <!-- Elemento 18: content 155x110px, padding 17px, border 3px ridge, margin 13px -->
+      <div class="caixa e18">
+        <strong>Caixa 18</strong>
+        <span>content 155×110px</span>
+        <span>padding 17px</span>
+        <span>border 3px ridge</span>
+        <span>margin 13px</span>
+      </div>
+      <!-- Elemento 19: content 185x112px, padding 19px, border 4px solid, margin 8px -->
+      <div class="caixa e19">
+        <strong>Caixa 19</strong>
+        <span>content 185×112px</span>
+        <span>padding 19px</span>
+        <span>border 4px solid</span>
+        <span>margin 8px</span>
+      </div>
+      <!-- Elemento 20: content 200x116px, padding 24px, border 5px double, margin 12px -->
+      <div class="caixa e20">
+        <strong>Caixa 20</strong>
+        <span>content 200×116px</span>
+        <span>padding 24px</span>
+        <span>border 5px double</span>
+        <span>margin 12px</span>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="rodape">
+    <p>Atividade 02 · CSS: Box Model e Flexbox</p>
+  </footer>
+
+</body>
+</html>

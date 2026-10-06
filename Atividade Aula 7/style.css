@@ -1,0 +1,134 @@
+/* ===== Variáveis de cor ===== */
+:root {
+  --azul: #124475;      /* azul escuro */
+  --ciano: #1ea7e1;     /* azul claro */
+  --fundo: #eef2f6;     /* fundo da página */
+  --trilho: #d9e3ed;    /* fundo da galeria: deixa a margin visível */
+  --texto: #14213d;
+}
+
+/* ===== Base ===== */
+* { box-sizing: content-box; }   /* width/height valem só para o CONTENT */
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: system-ui, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+h1, h2 { font-family: Georgia, serif; margin: 0 0 8px; }
+a { color: inherit; text-decoration: none; }
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+
+/* ===== Cabeçalho ===== */
+.cabecalho {
+  display: flex;                    /* Flexbox 1: display */
+  justify-content: space-between;   /* Flexbox 2: justify-content */
+  align-items: center;              /* Flexbox 3: align-items */
+  flex-wrap: wrap;                  /* Flexbox 4: flex-wrap */
+  gap: 12px;                        /* Flexbox 5: gap */
+  background: var(--azul);
+  color: #fff;
+  padding: 16px 24px;
+}
+.logo { font-size: 1.4rem; margin: 0; }
+
+/* ===== Menu ===== */
+.menu {
+  display: flex;
+  flex-flow: row wrap;   /* Flexbox 6: flex-flow (direction + wrap) */
+  column-gap: 20px;      /* Flexbox 7: column-gap */
+  row-gap: 6px;          /* Flexbox 8: row-gap */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a { border-bottom: 2px solid var(--ciano); padding-bottom: 2px; }
+
+/* ===== Introdução ===== */
+.intro {
+  display: flex;
+  flex-direction: row;   /* Flexbox 9: flex-direction */
+  gap: 24px;
+  padding: 16px 0;
+}
+.intro-texto { flex: 1; max-width: 640px; }   /* ocupa o espaço restante */
+.selos { display: flex; flex-direction: column; gap: 8px; }
+.selo {
+  display: inline-flex;     /* Flexbox 17: inline-flex */
+  place-content: center;    /* Flexbox 18: place-content */
+  background: var(--ciano);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+/* ===== Galeria (container flex dos 20 elementos) ===== */
+.titulo-secao { margin: 16px 0 12px; }
+.galeria {
+  display: flex;
+  flex-wrap: wrap;            /* quebra de linha: base da responsividade */
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;  /* Flexbox 10: align-content */
+  background: var(--trilho);
+  padding: 12px;
+}
+
+/* Estilo comum das caixas */
+.caixa {
+  background: #fff;
+  font-size: 12px;
+  line-height: 1.35;
+  overflow: hidden;
+  flex-grow: 1;       /* Flexbox 11: flex-grow (sobra de espaço na linha) */
+  flex-shrink: 1;     /* Flexbox 12: flex-shrink (pode encolher) */
+  flex-basis: auto;   /* Flexbox 13: flex-basis (parte da largura definida) */
+}
+.caixa strong { display: block; font-size: 14px; }
+.caixa span { display: block; }
+
+/* Box Model de cada elemento: content (width/height), padding, border e margin */
+.e01 { width: 150px; height: 110px; padding: 10px; border: 3px solid #124475; margin: 8px; }
+.e02 { width: 160px; height: 110px; padding: 12px; border: 4px dashed #1ea7e1; margin: 6px; }
+.e03 { width: 170px; height: 112px; padding: 14px; border: 3px dotted #124475; margin: 10px; }
+.e04 { width: 180px; height: 112px; padding: 16px; border: 6px double #1ea7e1; margin: 8px; }
+.e05 { width: 190px; height: 116px; padding: 18px; border: 4px groove #5b8db8; margin: 12px; }
+.e06 { width: 140px; height: 110px; padding: 8px; border: 2px solid #1ea7e1; margin: 4px; }
+.e07 { width: 200px; height: 116px; padding: 20px; border: 5px ridge #5b8db8; margin: 10px; }
+.e08 { width: 150px; height: 110px; padding: 12px; border: 3px inset #124475; margin: 6px; }
+.e09 { width: 160px; height: 110px; padding: 12px; border: 3px outset #124475; margin: 8px; }
+.e10 { width: 210px; height: 116px; padding: 14px; border: 4px solid #e8892b; margin: 12px; }
+.e11 { width: 150px; height: 110px; padding: 6px; border: 2px dashed #124475; margin: 14px; }
+.e12 { width: 170px; height: 112px; padding: 22px; border: 3px solid #5b8db8; margin: 5px; }
+.e13 { width: 180px; height: 112px; padding: 10px; border: 5px dotted #1ea7e1; margin: 9px; }
+.e14 { width: 140px; height: 110px; padding: 15px; border: 4px double #124475; margin: 7px; }
+.e15 { width: 190px; height: 116px; padding: 9px; border: 3px dashed #5b8db8; margin: 11px; }
+.e16 { width: 160px; height: 110px; padding: 13px; border: 2px solid #124475; margin: 10px; }
+.e17 { width: 175px; height: 112px; padding: 11px; border: 6px groove #1ea7e1; margin: 6px; }
+.e18 { width: 155px; height: 110px; padding: 17px; border: 3px ridge #124475; margin: 13px; }
+.e19 { width: 185px; height: 112px; padding: 19px; border: 4px solid #1ea7e1; margin: 8px; }
+.e20 { width: 200px; height: 116px; padding: 24px; border: 5px double #5b8db8; margin: 12px; }
+
+/* Casos individuais de Flexbox */
+.e05 { flex: 2 1 220px; }     /* Flexbox 14: flex (grow shrink basis) */
+.e10 { order: -1; }           /* Flexbox 15: order (vai para o início) */
+.e01 { align-self: flex-end; }/* Flexbox 16: align-self (alinha só este item) */
+
+/* ===== Rodapé ===== */
+.rodape {
+  background: var(--azul);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  margin-top: 24px;
+}
+.rodape p { margin: 0; }
+
+/* ===== Responsivo: telas de até 600px ===== */
+@media (max-width: 600px) {
+  .cabecalho { flex-direction: column; }    /* Flexbox 19: flex-direction */
+  .intro { flex-direction: column; }
+  .galeria { justify-content: space-evenly; }/* Flexbox 20: justify-content */
+}
