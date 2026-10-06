@@ -202,6 +202,49 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .d-wrap .bloco,
 .d-wrap-reverse .bloco { width: 70px; }
 
+/* ===== Diagrama do Box Model ===== */
+.bm-layout {
+  display: flex;
+  flex-wrap: wrap;       /* a legenda desce para baixo em telas estreitas */
+  align-items: center;
+  gap: 24px;
+}
+
+/* As três camadas externas têm a mesma estrutura: coluna centralizada */
+.bm-margin,
+.bm-border,
+.bm-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 22px;
+  color: #14213d;        /* texto escuro fixo: o fundo colorido não muda no tema escuro */
+}
+.bm-margin  { background: #f4c38b; border: 2px dashed #14213d; }
+.bm-border  { background: #f3dd8a; border: 4px solid #14213d; }
+.bm-padding { background: #bfd88f; border: 2px dashed #14213d; }
+
+/* O miolo do diagrama */
+.bm-content {
+  padding: 14px 36px;
+  background: #7fb6dc;
+  color: #14213d;
+  border: 2px solid #14213d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bm-rotulo { font-family: monospace; font-size: 0.85rem; font-weight: bold; }
+
+/* Legenda: cada item tem uma faixa com a cor da sua camada */
+.bm-legenda { flex: 1 1 260px; list-style: none; margin: 0; padding: 0; }
+.bm-legenda li { margin: 0 0 10px; padding-left: 10px; border-left: 8px solid; }
+.lg-content { border-left-color: #7fb6dc; }
+.lg-padding { border-left-color: #bfd88f; }
+.lg-border  { border-left-color: #f3dd8a; }
+.lg-margin  { border-left-color: #f4c38b; }
+
 /* ===== Rodapé ===== */
 .rodape {
   background: var(--azul);

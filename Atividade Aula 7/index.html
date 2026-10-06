@@ -19,6 +19,7 @@
         <li><a href="#galeria">20 elementos</a></li>
         <li><a href="#laboratorio">Laboratório</a></li>
         <li><a href="#rodape">Rodapé</a></li>
+        <li><a href="#boxmodel">Box Model</a></li>
       </ul>
     </nav>
   </header>
@@ -407,6 +408,37 @@
             <div class="bloco b2">6</div>
           </div>
         </div>
+
+      </div>
+    </section>
+
+        <!-- ===== Diagrama do Box Model: quatro camadas aninhadas ===== -->
+    <section class="boxmodel" id="boxmodel">
+      <h2 class="titulo-secao">Diagrama do Box Model</h2>
+      <div class="bm-layout">
+
+        <!-- Camada externa: margin (espaço entre este elemento e os outros) -->
+        <div class="bm-margin">
+          <span class="bm-rotulo">margin</span>
+          <!-- border: linha que envolve o padding e o conteúdo -->
+          <div class="bm-border">
+            <span class="bm-rotulo">border</span>
+            <!-- padding: espaço entre o conteúdo e a borda -->
+            <div class="bm-padding">
+              <span class="bm-rotulo">padding</span>
+              <!-- content: onde ficam o texto e as imagens -->
+              <div class="bm-content">content</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legenda explicando cada camada -->
+        <ul class="bm-legenda">
+          <li class="lg-content"><b>content:</b> área onde o texto e as imagens aparecem.</li>
+          <li class="lg-padding"><b>padding:</b> espaço entre o conteúdo e a borda.</li>
+          <li class="lg-border"><b>border:</b> linha que envolve o padding e o conteúdo.</li>
+          <li class="lg-margin"><b>margin:</b> espaço entre a borda e os outros elementos.</li>
+        </ul>
 
       </div>
     </section>
