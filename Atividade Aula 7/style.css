@@ -116,6 +116,92 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .e10 { order: -1; }           /* Flexbox 15: order (vai para o início) */
 .e01 { align-self: flex-end; }/* Flexbox 16: align-self (alinha só este item) */
 
+/* ===== Laboratório de Flexbox ===== */
+
+.lab-intro { margin: 0 0 8px; max-width: 640px; }
+
+/* Título de cada grupo de propriedade */
+.grupo-titulo {
+  font-family: monospace;
+  font-size: 1.15rem;
+  margin: 24px 0 8px;
+  padding-left: 10px;
+  border-left: 4px solid var(--ciano);
+}
+
+/* Lista de demos: também é flex, então as demos quebram linha sozinhas */
+.demo-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Cada grupo (título + demo): mínimo de 280px, cresce se sobrar espaço */
+.demo-grupo { flex: 1 1 280px; }
+
+.demo-titulo {
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin: 0 0 6px;
+}
+
+/* O container que recebe as propriedades do Flexbox */
+.demo {
+  display: flex;            /* liga o Flexbox */
+  gap: 8px;
+  padding: 10px;
+  min-height: 140px;        /* dá espaço para ver o alinhamento vertical */
+  background: var(--trilho);
+  border: 2px solid var(--azul);
+}
+
+/* Os blocos numerados (itens flex) */
+.bloco {
+  width: 50px;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Cores e alturas diferentes: as alturas ajudam a ver o align-items */
+.b1 { background: #2ecc71; height: 40px; }
+.b2 { background: #e8c619; height: 60px; }
+.b3 { background: #d83a3a; height: 40px; }
+.b4 { background: #3d9ad8; height: 70px; }
+
+/* --- flex-direction --- */
+.d-row            { flex-direction: row; }
+.d-column         { flex-direction: column; }
+.d-row-reverse    { flex-direction: row-reverse; }
+.d-column-reverse { flex-direction: column-reverse; }
+
+/* --- justify-content --- */
+.j-start   { justify-content: flex-start; }
+.j-center  { justify-content: center; }
+.j-end     { justify-content: flex-end; }
+.j-between { justify-content: space-between; }
+.j-around  { justify-content: space-around; }
+.j-evenly  { justify-content: space-evenly; }
+
+/* --- align-items --- */
+.a-start   { align-items: flex-start; }
+.a-center  { align-items: center; }
+.a-end     { align-items: flex-end; }
+.a-stretch { align-items: stretch; }
+/* stretch só estica itens SEM altura fixa, por isso zeramos a altura aqui */
+.a-stretch .bloco { height: auto; }
+
+/* --- flex-wrap --- */
+.d-nowrap       { flex-wrap: nowrap; }        /* padrão: os itens encolhem */
+.d-wrap         { flex-wrap: wrap; }          /* quebra para a linha de baixo */
+.d-wrap-reverse { flex-wrap: wrap-reverse; }  /* quebra para a linha de cima */
+
+/* Nas demos de wrap, os blocos são menores para caberem 6 na demo */
+.d-nowrap .bloco,
+.d-wrap .bloco,
+.d-wrap-reverse .bloco { width: 70px; }
+
 /* ===== Rodapé ===== */
 .rodape {
   background: var(--azul);
